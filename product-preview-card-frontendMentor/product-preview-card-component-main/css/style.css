@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Nuosu+SIL&family=Outfit&family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,400&family=Roboto:wght@400;500;700&display=swap');
+* {    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color:	#FFEFD5;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 0 1.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+p {
+    line-height: 1.8;
+    padding: 0 1rem;
+}
+ul li {
+    list-style-type: none;
+}
+.img {
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.title {
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    color: 	#696969;
+}
+.price {
+    color: hsl(158, 36%, 37%);
+    padding: 1rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    justify-content: center;
+    
+}
+.container article:first-child img{
+    border-radius: 1rem 1rem 0 0;
+}
+.container article:last-child {
+    background-color: white;
+    border-radius: 0 0 0.5rem 0.5rem;
+    margin-top: -0.5rem;
+}
+.container ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.container ul li:nth-child(2) {
+    color: hsl(228, 12%, 48%);
+}
+.container ul li:first-child {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+}
+.container p {
+    margin-bottom: 2rem;
+}
+.container .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    padding: 1rem 2rem;
+    width: 90%;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: 0.4s;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    color: white;
+    margin-left: 1.2rem;
+
+}
+
+.container .btn:hover {
+    background-color: hsl(212, 21%, 14%);
+   
+}
+.imgCart{
+    padding-right: 0.5rem;
+}
+.finish {
+    padding-top: 1rem;
+}
+@media (min-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+    }
+    picture img {
+        height: 100%;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    .img {
+        margin-top: 0;
+    }
+    .container article:first-child img {
+        border-radius: 0.625rem 0 0 0.625rem;
+        width: 100%;
+    }
+    .container article:last-child {
+        border-radius: 0 0.625rem 0.625rem 0;
+         
+    }
+    article.item.secaoConteudo {
+        margin-top: 0;
+    }
+    .container p {
+        margin-bottom: 0.5rem;
+    }
+    .container .btn {
+        width: 90%;
+        margin-left: 1rem;
+    }
+    
+}
